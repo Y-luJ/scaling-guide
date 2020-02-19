@@ -7,17 +7,33 @@
 </head>
 <body>
     <h1>Вакансия: Junior Frontend Developer</h1>
-    <span><img src='Photo.jpg' width="100" height="80" alt='Это я'>
-            <p>Имя: Юлия Корхова</p>
-            <p><a href='https://github.com/Y-luJ?tab=repositories'>Github</a></p>
-            <p>Опыт работы: нет</p>
-    </span>
+    <div style='width:30%';>
+        <img src='Photo.jpg' width="100" height="80" alt='Это я'>
+
+        <p>Имя: Юлия Корхова</p>
+        <p><a href='https://github.com/Y-luJ?tab=repositories'>Github</a></p>
+        <p>Опыт работы: нет</p>
+    </div>
     <div><p>Дата собеседования:<form><input type="date" name="calendar">
-        <input type="submit" value="Отправить">
        </form></p>
     </div>
-    <p>Уровень английского:</p>
-    <span></span>
+    <p><label>Уровень английского:</label></p>
+    <div>
+        <input type="radio" value="Плохо" name="English"><label for="Плохо">Плохо</label>
+        <input type="radio" value="Средне" name="English"><label for="Средне">Средне</label>
+        <input type="radio" value="Хорошо" name="English"><label for="Хорошо">Хорошо</label>
+        <input type="radio" value="Превосходно" name="English"><label for="Превосходно">Превосходно</label>
+    </div>
+    <div>
+        <p>Ключевые навыки:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li><input type="text" name="Введите навык"> <button type="submit">Добавить в список</button></li>
+            </ul>
+        </li>
+    </div>
     
     
 

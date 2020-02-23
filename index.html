@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel='stylesheet' href='./Style.css'>
 </head>
 <body>
     <h1>Вакансия: Junior Frontend Developer</h1>
 <div>
-        <img src='Photo.jpg' width="100" height="80" align='left' alt='Это я'>
-    <div>
-        <p>Имя: Юлия Корхова<br>
+        <img src='Photo.jpg' alt='Это я'>
+    <div class='info'>
+        <p><span>Имя:</span> Юлия<br>
         <a href='https://github.com/Y-luJ?tab=repositories'>Github</a><br>
-        Опыт работы: нет</p><br>
+        <span>Опыт работы:</span> нет</p><br>
     </div>
+    <br>
+    <br>
     <div>
         <p>
-            <form><Label>Дата собеседования:</Label><input type="date" name="calendar"></form>
+            <form><span><Label>Дата собеседования:</Label></span><input type="date" name="calendar"></form>
         </p>
     </div>
     <p>
-        <form><label>Уровень английского:</label>
+        <form><span><label>Уровень английского:</label></span>
     </p>
     <div>
         <input type="radio" value="Плохо" name="English"><label for="Плохо">Плохо</label>
@@ -30,7 +33,7 @@
         </form>
     </div>
     <div>
-        <p><label>Ключевые навыки:</label>
+        <p><span><label>Ключевые навыки:</label></span>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -40,7 +43,7 @@
         </p>
     </div>
     <form>
-        <label for="sociability">Коммуникабельность:</label>
+        <span><label for="sociability">Коммуникабельность:</label></span>
         <select name="sociability">
             <option disabled selected value="Выбор">Выберите значение</option>
             <option value="Высокая">Осел</option>
@@ -51,19 +54,19 @@
     </form>
     <p>
         <form>
-            <Label>Желаемая з/п:</Label><input type="text" name="Salary" placeholder="Введите значение...">
+            <span><Label>Желаемая з/п:</Label></span><input type="text" name="Salary" placeholder="Введите значение...">
         </form>
     </p>
-    <label>Подходит по критериям:</label>
+    <span><label>Подходит по критериям:</label></span>
     <form>
-        <input type="checkbox" value='English'><label for='English'>Знание английского</label>
-        <input type="checkbox" value='Salary'><label for='Salary'>Оклад</label>
-        <input type="checkbox" value='Skills'><label for='Skills'>Навыки</label>
-        <input type="checkbox" value='Teamwork'><label for='Teamwork'>Сразу видно, что свой человек</label>
+        <label class='checkbox'>Знание английского<input type="checkbox" value='English'><span class="checkmark"></span></label>
+        <label class='checkbox'>Оклад<input type="checkbox" value='Salary'><span class="checkmark"></span></label>
+        <label class='checkbox'>Навыки<input type="checkbox" value='Skills'><span class="checkmark"></span></label>
+        <label class='checkbox'>Сразу видно, что свой человек<input type="checkbox" value='Teamwork'><span class="checkmark"></span></label>
     </form>
     <div>
         <p>
-            <label>Образование, курсы и т.п.</label>
+            <span><label>Образование, курсы и т.п.</label></span>
             <table border='1'>
                 <tbody>               
                     <tr>

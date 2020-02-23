@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Playfair+Display&display=swap');
+
+body {
+    font-size: 14px;
+    font-family: 'Arimo', ;  
+    background-color: bisque;
+    color: darkred;
+}
+h1 {
+    size: 18px;
+}
+img {
+    float: left;
+    width: 150px; 
+    height: 115px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+}
+.info {
+    display: inline-block; 
+}
+div .info {
+    margin-left: 5px;
+}
+input, select, button {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
+    text-align: center;
+    border-color: darkred;
+    color: darkred;
+    margin-left: 2px;
+}
+span {
+    font-weight: bold;
+    font-size: 16px;
+}
+.checkbox {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-color: darkred;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
+}
+.checkbox:hover input ~ .checkmark {
+    background-color: darkred;
+}
+.checkbox input:checked ~ .checkmark {
+    background-color: darkred;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}  
+table {
+    border-style: solid;
+    border-width: medium;
+    border-color: darkred;
+}

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Вакансия: Junior Frontend Developer</h1>
-<div>
+    <form>
         <img src='Photo.jpg' alt='Это я'>
     <div class='info'>
         <p><span>Имя:</span> Юлия<br>
@@ -16,21 +16,19 @@
         <span>Опыт работы:</span> нет</p><br>
     </div>
     <br>
-    <br>
     <div>
         <p>
-            <form><span><Label>Дата собеседования:</Label></span><input type="date" name="calendar"></form>
+            <span><Label>Дата собеседования:</Label></span><input type="date" name="calendar">
         </p>
     </div>
-    <p>
-        <form><span><label>Уровень английского:</label></span>
-    </p>
     <div>
-        <input type="radio" value="Плохо" name="English"><label for="Плохо">Плохо</label>
-        <input type="radio" value="Средне" name="English"><label for="Средне">Средне</label>
-        <input type="radio" value="Хорошо" name="English"><label for="Хорошо">Хорошо</label>
-        <input type="radio" value="Превосходно" name="English"><label for="Превосходно">Превосходно</label>
-        </form>
+        <span><label>Уровень английского:</label></span>
+    </div>
+    <div>
+        <label class='radio'><input type="radio" value="Плохо" name="English">Плохо<span class="checkdot"></span></label>
+        <label class='radio'><input type="radio" value="Средне" name="English">Средне<span class="checkdot"></span></label>
+        <label class='radio'><input type="radio" value="Хорошо" name="English">Хорошо<span class="checkdot"></span></label>
+        <label class='radio'><input type="radio" value="Превосходно" name="English">Превосходно<span class="checkdot"></span></label>
     </div>
     <div>
         <p><span><label>Ключевые навыки:</label></span>
@@ -38,11 +36,11 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li><input type="text" name="A new skill" placeholder="Введите навык"> <button type="submit">Добавить в список</button></li>
+                <li></li>
             </ul>
+            <input type="text" name="A new skill" placeholder="Введите навык"> <button type="submit">Добавить в список</button>
         </p>
     </div>
-    <form>
         <span><label for="sociability">Коммуникабельность:</label></span>
         <select name="sociability">
             <option disabled selected value="Выбор">Выберите значение</option>
@@ -51,19 +49,18 @@
             <option value="Низкая">Принц Чарминг</option>
             <option value="Очень низкая">Шрек</option>
         </select>
-    </form>
     <p>
-        <form>
             <span><Label>Желаемая з/п:</Label></span><input type="text" name="Salary" placeholder="Введите значение...">
-        </form>
     </p>
-    <span><label>Подходит по критериям:</label></span>
-    <form>
+    <div>
+        <span><label>Подходит по критериям:</label></span>
+    </div>
+    <div>
         <label class='checkbox'>Знание английского<input type="checkbox" value='English'><span class="checkmark"></span></label>
         <label class='checkbox'>Оклад<input type="checkbox" value='Salary'><span class="checkmark"></span></label>
         <label class='checkbox'>Навыки<input type="checkbox" value='Skills'><span class="checkmark"></span></label>
         <label class='checkbox'>Сразу видно, что свой человек<input type="checkbox" value='Teamwork'><span class="checkmark"></span></label>
-    </form>
+    </div>
     <div>
         <p>
             <span><label>Образование, курсы и т.п.</label></span>
@@ -81,7 +78,8 @@
                 </tbody>
             </table>
         </p>            
-    </div>            
+    </div>
+</form>            
 </body>                
                     
             

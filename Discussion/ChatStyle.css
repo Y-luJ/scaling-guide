@@ -7,7 +7,7 @@ body {
     margin-top: 5%;
     width: 800px;
     height: 600px;
-    border: solid 2px black;
+    border: solid 2px #035e49;
 }
 header {
     display: flex;
@@ -36,13 +36,13 @@ padding-left: 6px;
 .rclose {
     height: 20px;
     width: 3px;
-    background-color: black;
+    background-color: #0d392f;
     transform: rotate(45deg);
 }
 .lclose {
     height: 20px;
     width: 3px;
-    background-color: black;
+    background-color: #0d392f;
     transform: rotate(90deg);
 }
 .layer {
@@ -51,7 +51,7 @@ padding-left: 6px;
     overflow: scroll;
     width: 800px;
     height: 528px;
-    border-top: solid 2px black;
+    border-top: solid 2px #035e49;
 }
 .timing {
     grid-column: 1/2;
@@ -87,7 +87,7 @@ p {
     margin-left: 10px;
 }
 .Text {
-    border: solid 2px black;
+    border: solid 2px rgb(17, 109, 97);
     font-size: 14px;
     padding: 2px;
     margin-top: 3px;

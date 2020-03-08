@@ -1,0 +1,11 @@
+let n=1000000;
+let y=10;
+let p=10;
+var i=((p/12)/100);
+var t=y*12;
+m=((n * i * (Math.pow((1 + i), t)))/(Math.pow((1 + i), t)-1)).toFixed(3);
+S=(m*t).toFixed(3);
+console.log(m);
+console.log(S);
+var answer = 'm='+m+', S='+S;
+document.getElementById("answer").innerHTML = answer;

@@ -13,4 +13,6 @@ function isEven(n) {
         return isEven(Math.abs(n)-2);
     }
 }
-console.log(isEven(-65));
+let x=prompt('Введите число',);
+alert(isEven(x));
+console.log(isEven(x));

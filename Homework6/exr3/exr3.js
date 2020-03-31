@@ -20,3 +20,6 @@ function deepequal(a, b) {
             return a===b;
     }
 }
+let x=prompt("Введите первое значение",);
+let y=prompt("Введите второе значение",);
+alert(deepequal(x, y));

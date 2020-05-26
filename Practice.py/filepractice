@@ -1,0 +1,22 @@
+
+with open('Bible_txt.txt', 'r') as file:
+    a=file.read()
+    print(len(a))
+    list1=[i for i in a.split()]
+    list1.sort()
+    list=[i for i in a.lower().split()]
+    dict={}
+    list.sort()
+    dict = {}
+    for i in list:
+        if i not in dict:
+            dict[i] = 1
+        else:
+            dict[i] += 1
+    m=max(dict.values())
+    for key, value in dict.items():
+        if value == m:
+            print(key, value)
+
+
+
